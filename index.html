@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Renad Store 🌸</title>
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      background: linear-gradient(135deg, #fc466b, #3f5efb);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      max-width: 430px;
+      margin: 20px auto;
+    }
+
+    .avatar {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 0.95em;
+      color: #eee;
+      margin-bottom: 25px;
+    }
+
+    .links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: rgba(255, 255, 255, 0.15);
+      color: white;
+      text-decoration: none;
+      padding: 12px;
+      border-radius: 30px;
+      margin: 10px 0;
+      font-size: 1em;
+      transition: all 0.3s ease;
+    }
+
+    .links a:hover {
+      transform: scale(1.08);
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    .links img {
+      width: 22px;
+      height: 22px;
+    }
+
+    .qr {
+      background: white;
+      padding: 12px;
+      border-radius: 12px;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 35px;
+      font-size: 0.85em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <img src="https://via.placeholder.com/130" alt="Renad Store" class="avatar">
+    <h1>Renad Store</h1>
+    <p>✨ Discover the beauty and elegance of Renad Store — where style meets confidence ✨</p>
+
+    <div class="links">
+      <a href="https://www.instagram.com/renadstoree?igsh=OXVpejcyNTN3b21y" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
+        Instagram (Store)
+      </a>
+      <a href="https://www.instagram.com/renad_beautyy?igsh=MThvNTU5Nzl0b3Jvcw==" target="_blank">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram">
+        Instagram (Beauty)
+      </a>
+      <a href="tel:+967733071284">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg" alt="Phone">
+        Call / WhatsApp: +967 733 071 284
+      </a>
+    </div>
+
+    <h3 style="margin-top:25px;">📲 Scan QR to open this page</h3>
+    <div class="qr" id="qrcode"></div>
+  </div>
+
+  <footer>© 2025 Renad Store | All Rights Reserved</footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    // ✅ Automatically generate QR for the current live page
+    const myPageLink = window.location.href;
+
+    new QRCode(document.getElementById("qrcode"), {
+      text: myPageLink,
+      width: 180,
+      height: 180
+    });
+  </script>
+
+</body>
+</html>
